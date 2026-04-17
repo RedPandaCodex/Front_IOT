@@ -1,0 +1,181 @@
+.container {
+    min-height: 78.5vh;
+    padding: 40px 20px;
+    position: relative;
+}
+
+.container::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: 
+        radial-gradient(circle at 80% 20%, rgba(255, 0, 255, 0.1) 0%, transparent 50%),
+        radial-gradient(circle at 20% 80%, rgba(0, 255, 255, 0.1) 0%, transparent 50%);
+    pointer-events: none;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 40px;
+    max-width: 1300px;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    z-index: 1;
+}
+
+.titulo {
+    color: var(--texto-claro);
+    font-size: 3rem;
+    background: linear-gradient(135deg, var(--laranja-neon) 0%, var(--magenta) 50%, var(--azul-neon) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-shadow: 0 0 30px rgba(255, 107, 53, 0.5);
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+
+.botaoAdicionar {
+    background: linear-gradient(135deg, var(--laranja-neon) 0%, var(--magenta) 100%);
+    color: var(--texto-claro);
+    border: none;
+    padding: 15px 30px;
+    border-radius: 12px;
+    font-size: 1.1rem;
+    font-weight: 700;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    position: relative;
+    overflow: hidden;
+}
+
+.botaoAdicionar:hover {
+    transform: translateY(-3px);
+    box-shadow: 
+        0 10px 25px rgba(255, 107, 53, 0.4),
+        0 0 30px rgba(255, 0, 255, 0.3);
+}
+
+.tabelaContainer {
+    background: linear-gradient(135deg, rgba(107, 44, 133, 0.8) 0%, rgba(26, 11, 46, 0.9) 100%);
+    border-radius: 20px;
+    padding: 30px;
+    box-shadow: 
+        0 20px 40px rgba(255, 107, 53, 0.2),
+        0 0 50px rgba(255, 0, 255, 0.1);
+    max-width: 1300px;
+    margin: 0 auto;
+    overflow-x: auto;
+    backdrop-filter: blur(10px);
+    border: 2px solid transparent;
+    position: relative;
+    z-index: 1;
+}
+
+.tabelaContainer::before {
+    content: '';
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    right: -2px;
+    bottom: -2px;
+    background: linear-gradient(45deg, var(--laranja-neon), var(--magenta), var(--azul-neon));
+    border-radius: 22px;
+    z-index: -1;
+    opacity: 0.3;
+}
+
+.tabela {
+    width: 100%;
+    color: var(--texto-claro);
+}
+
+.tabela th {
+    background: linear-gradient(135deg, var(--laranja-neon) 0%, var(--magenta) 100%);
+    padding: 20px;
+    text-align: left;
+    font-weight: 700;
+    border: none;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 1.1rem;
+}
+
+.tabela td {
+    padding: 20px;
+    border-bottom: 1px solid rgba(255, 107, 53, 0.3);
+    background: rgba(255, 255, 255, 0.05);
+}
+
+.tabela tr:hover td {
+    background: rgba(255, 107, 53, 0.1);
+}
+
+.status {
+    padding: 8px 16px;
+    border-radius: 20px;
+    font-size: 0.9rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.ativo {
+    background: var(--azul-neon);
+    color: var(--texto-escuro);
+    text-shadow: 0 0 10px rgba(0, 255, 255, 0.5);
+}
+
+.inativo {
+    background: var(--magenta);
+    color: var(--texto-claro);
+    text-shadow: 0 0 10px rgba(255, 0, 255, 0.5);
+}
+
+.acoes {
+    display: flex;
+    gap: 12px;
+}
+
+.botaoEditar, .botaoExcluir {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 8px;
+    font-size: 0.9rem;
+    font-weight: 700;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    position: relative;
+    overflow: hidden;
+}
+
+.botaoEditar {
+    background: linear-gradient(135deg, var(--azul-neon) 0%, var(--laranja-neon) 100%);
+    color: var(--texto-escuro);
+}
+
+.botaoEditar:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(0, 255, 255, 0.4);
+}
+
+.botaoExcluir {
+    background: linear-gradient(135deg, var(--magenta) 0%, #ff1493 100%);
+    color: var(--texto-claro);
+}
+
+.botaoExcluir:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(255, 0, 255, 0.4);
+}

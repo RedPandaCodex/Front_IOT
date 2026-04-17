@@ -1,0 +1,36 @@
+/* Rodape.module.css */
+.rodape {
+    background: linear-gradient(135deg, var(--roxo-escuro) 0%, var(--roxo-medio) 100%);
+    color: var(--texto-claro);
+    padding: 20px;
+    text-align: center;
+    font-size: 1rem;
+    border-top: 3px solid var(--laranja-neon);
+    box-shadow: 0 -5px 20px rgba(255, 107, 53, 0.3);
+    position: relative;
+    overflow: hidden;
+    margin-top: auto; /* Isso empurra o rodapé para baixo */
+    width: 100%;
+}
+
+.rodape::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(45deg, transparent, rgba(255, 107, 53, 0.1), transparent);
+    animation: shine 4s infinite;
+}
+
+@keyframes shine {
+    0% { transform: translateX(-100%); }
+    100% { transform: translateX(100%); }
+}
+
+.rodape h3 {
+    margin: 0;
+    font-weight: 600;
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+}
