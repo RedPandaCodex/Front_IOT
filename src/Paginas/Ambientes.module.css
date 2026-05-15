@@ -13,8 +13,8 @@
     right: 0;
     bottom: 0;
     background: 
-        radial-gradient(circle at 10% 20%, rgba(255, 107, 53, 0.1) 0%, transparent 50%),
-        radial-gradient(circle at 90% 80%, rgba(255, 0, 255, 0.1) 0%, transparent 50%);
+        radial-gradient(circle at 10% 20%, rgba(94, 0, 156, 0.1) 0%, transparent 50%),
+        radial-gradient(circle at 90% 80%, rgba(77, 0, 150, 0.1) 0%, transparent 50%);
     pointer-events: none;
 }
 
@@ -27,7 +27,7 @@
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
-    text-shadow: 0 0 30px rgba(255, 107, 53, 0.5);
+    text-shadow: 0 0 30px rgba(0, 22, 145, 0.5);
     font-weight: 800;
     text-transform: uppercase;
     letter-spacing: 3px;
@@ -63,7 +63,7 @@
     left: -2px;
     right: -2px;
     bottom: -2px;
-    /*Efeito Gay*/
+    /*Efeito Gay* /
     /*background: linear-gradient(45deg, var(--laranja-neon), var(--magenta), var(--azul-neon), var(--laranja-neon));*/
     border-radius: 22px;
     z-index: -1;
@@ -78,8 +78,8 @@
 .cardAmbiente:hover {
     transform: translateY(-10px) scale(1.02);
     box-shadow: 
-        0 20px 40px rgba(255, 107, 53, 0.3),
-        0 0 50px rgba(255, 0, 255, 0.2);
+        0 20px 40px rgba(43, 0, 124, 0.3),
+        0 0 50px rgba(255, 1, 255, 0.2);
 }
 
 .headerCard {

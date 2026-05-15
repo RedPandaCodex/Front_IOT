@@ -1,5 +1,5 @@
-import estilo from './Cabecalho.module.css';
-import logo from '../assets/Logo.png';
+import estilo from "./Cabecalho.module.css";
+import logo from "../assets/Logo.png";
 
 export function Cabecalho() {
   return (

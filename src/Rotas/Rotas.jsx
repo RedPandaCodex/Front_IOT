@@ -6,16 +6,18 @@ import { Sensores } from "../Paginas/Sensores";
 import { Historico } from "../Paginas/Historico";
 import { CadastroSensor } from "../Paginas/CadastroSensor";
 import { EdicaoSensor } from "../Paginas/EdicaoSensor";
+import  Envolvidos  from "../Paginas/Envolvidos";
 
-export function Rotas(){
-    return(
-        <Routes basename="/scrm-11">
-            <Route path="/" element={<Inicial />} />
-            <Route path="/ambientes" element={<Ambientes />} />
-            <Route path="/sensores" element={<Sensores />} />
-            <Route path="/historico" element={<Historico />} />
-            <Route path="/cadastro-sensor" element={<CadastroSensor />} />
-            <Route path="/edicao-sensor/:id" element={<EdicaoSensor />} />
-        </Routes>
-    )
+export function Rotas() {
+  return (
+    <Routes basename="/scrm-11">
+      <Route path="/" element={<Inicial />} />
+      <Route path="/ambientes" element={<Ambientes />} />
+      <Route path="/sensores" element={<Sensores />} />
+      <Route path="/historico" element={<Historico />} />
+      <Route path="/envolvidos" element={<Envolvidos/>}/>
+      <Route path="/cadastro-sensor" element={<CadastroSensor />} />
+      <Route path="/edicao-sensor/:id" element={<EdicaoSensor />} />
+    </Routes>
+  );
 }
