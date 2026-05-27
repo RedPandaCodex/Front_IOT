@@ -8,7 +8,7 @@ export function Menu() {
     <div className={estilo.menuContainer}>
       <nav className={estilo.menuGrid}>
         <button
-          onClick={() => navigate("/inicial")}
+          onClick={() => navigate("/envolvidos")}
           className={estilo.menuItem}
         >
           Envolvidos

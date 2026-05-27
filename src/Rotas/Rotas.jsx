@@ -6,7 +6,7 @@ import { Sensores } from "../Paginas/Sensores";
 import { Historico } from "../Paginas/Historico";
 import { CadastroSensor } from "../Paginas/CadastroSensor";
 import { EdicaoSensor } from "../Paginas/EdicaoSensor";
-import  Envolvidos  from "../Paginas/Envolvidos";
+import { Envolvidos } from "../Paginas/Envolvidos";
 
 export function Rotas() {
   return (
@@ -15,7 +15,7 @@ export function Rotas() {
       <Route path="/ambientes" element={<Ambientes />} />
       <Route path="/sensores" element={<Sensores />} />
       <Route path="/historico" element={<Historico />} />
-      <Route path="/envolvidos" element={<Envolvidos/>}/>
+      <Route path="/envolvidos" element={<Envolvidos />} />
       <Route path="/cadastro-sensor" element={<CadastroSensor />} />
       <Route path="/edicao-sensor/:id" element={<EdicaoSensor />} />
     </Routes>

@@ -27,7 +27,7 @@
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
-    text-shadow: 0 0 30px rgba(0, 22, 145, 0.5);
+    text-shadow: 0 0 30px rgba(212, 161, 161, 0.5);
     font-weight: 800;
     text-transform: uppercase;
     letter-spacing: 3px;
@@ -46,7 +46,7 @@
 }
 
 .cardAmbiente {
-    background: linear-gradient(135deg, rgba(107, 44, 133, 0.8) 0%, rgba(26, 11, 46, 0.9) 100%);
+    background: linear-gradient(135deg, rgba(144, 65, 197, 0.8) 0%, rgba(26, 11, 46, 0.9) 100%);
     border-radius: 20px;
     padding: 30px;
     transition: all 0.3s ease;

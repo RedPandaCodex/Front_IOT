@@ -5,16 +5,16 @@
 }
 
 :root {
-  --roxo-escuro: #510585;     
-  --roxo-medio: #892fd3;      
-  --roxo-claro: #aa72fd;  
+  --roxo-escuro: #a24ddb;     
+  --roxo-medio: #6e14b8;      
+  --roxo-claro: #8b48f0;  
 
-  --laranja-neon: #f56a37;  
-  --brilho-neon:#fffffffd;
+  --laranja-neon: #4e267c;  
+  --brilho-neon:rgba(15, 15, 15, 0.992);
 
-  --magenta: hsl(258, 77%, 57%);      
+  --magenta: hsl(258, 55%, 54%);      
 
-  --azul-neon: #2956eb;  
+  --azul-neon: #ffffff;  
        
   --texto-claro: #ffffff;     
   --texto-escuro: #0e030a;
@@ -71,7 +71,7 @@ body {
   left: -100%;
   width: 100%;
   height: 100%;
-  background: linear-gradient(90deg, transparent, rgba(45, 8, 133, 0.4), transparent);
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.4), transparent);
   transition: left 0.5s;
 }
 

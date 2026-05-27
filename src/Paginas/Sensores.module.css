@@ -132,13 +132,13 @@
 .ativo {
     background: var(--azul-neon);
     color: var(--texto-escuro);
-    text-shadow: 0 0 10px rgba(0, 255, 255, 0.5);
+    text-shadow: 0 0 10px rgba(224, 100, 100, 0.5);
 }
 
 .inativo {
     background: var(--magenta);
     color: var(--texto-claro);
-    text-shadow: 0 0 10px rgba(255, 0, 255, 0.5);
+    text-shadow: 0 0 10px rgba(238, 97, 97, 0.5);
 }
 
 .acoes {
